@@ -22,7 +22,7 @@ public class GamePlayImpl implements GamePlay {
 
     @Override
     public synchronized Game play(String gameId, String playerName, int currentIndex) {
-        log.info("run a play for Player : {} in Game : {} with index : {}", playerName, gameId, currentIndex);
+        log.info("play a turn in Game : {} ", gameId);
         Game game = gameManagement.loadGame(gameId);
         Predicate<GameBoard> filterPlayerByNamePredicate = p -> playerName.equals(p.getPlayerName());
         if (game.getGameStatus().equals(Game.GameStatus.IN_PROGRESS)) {

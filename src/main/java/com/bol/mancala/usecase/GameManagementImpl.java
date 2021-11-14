@@ -41,7 +41,7 @@ public class GameManagementImpl implements GameManagement {
 
     @Override
     public Game createAndJoinGame(String player1Name, String player2Name) {
-        log.info("create a new Game for Player1 : {} & Player2 : {}", player1Name, player2Name);
+        log.info("create a new Game ");
         Game game = new Game();
         joinGame(player1Name, player2Name, game);
         makeGamePlayable(game);
@@ -51,7 +51,7 @@ public class GameManagementImpl implements GameManagement {
     }
 
     private void joinGame(String player1Name, String player2Name, Game game) {
-        log.info("join Game Id : {} ,for Player1 : {} & Player2 : {}", game.getGameId(), player1Name, player2Name);
+        log.info("join Game Id : {}", game.getGameId());
         if (game.getGameBoardList().size() > 1)
             throw new GameException("game is full");
         else {

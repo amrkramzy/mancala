@@ -30,14 +30,14 @@ public class GameRestController {
     @GetMapping
     @ApiOperation(value = "Get all Games", notes = "get all the Games in DB")
     public List<Game> getAllGames() {
-        log.debug("get all Games");
+        log.info("get all Games");
         return gameManagement.getAllGames();
     }
 
     @GetMapping("/{gameId}")
     @ApiOperation(value = "Get Game by ID", notes = "Get a specific Game by ID from DB")
     public Game getGame(@PathVariable @NotNull String gameId) {
-        log.debug("get Game details for ID : {} ", gameId);
+        log.info("get Game details for ID : {} ", gameId);
         return gameManagement.loadGame(gameId);
     }
 
@@ -45,14 +45,14 @@ public class GameRestController {
     @ResponseStatus(HttpStatus.CREATED)
     @ApiOperation(value = "Create and join new Game", notes = "Create a new Game and add 2 player")
     public Game createAndJoinGame(@RequestParam @NotNull String player1Name, @RequestParam @NotNull String player2Name) {
-        log.debug("create a new Game for Player1 : {} & Player2 : {}", player1Name, player2Name);
+        log.info("create a new Game ");
         return gameManagement.createAndJoinGame(player1Name, player2Name);
     }
 
     @PatchMapping("/{gameId}/play")
     @ApiOperation(value = "play a turn", notes = "play a turn in the Game")
     public Game play(@PathVariable @NotNull String gameId, @RequestParam @NotNull String playerName, @RequestParam @NotNull @Min(1) @Max(6) int index) {
-        log.debug("run a play for Player : {} in Game : {} with index : {}", playerName, gameId, index);
+        log.info("play a turn in Game : {} ", gameId);
         return gamePlay.play(gameId, playerName, index);
     }
 }
