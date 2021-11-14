@@ -220,8 +220,10 @@ docker-compose up
 ```
 ## REST API
 
-This is a simple  documentation for the application REST APIs.<br>
-For full APIs documentation please check [Documentation section](#documents) 
+* 	[Postman Collection APIs](https://documenter.getpostman.com/view/13659214/UVC8DRzy) - `https://documenter.getpostman.com/view/13659214/UVC8DRzy`- Documentation & Testing
+* 	[Swagger](http://bol-lb-1207651706.eu-central-1.elb.amazonaws.com:8989/bol/swagger-ui/#/game-rest-controller) - `http://bol-lb-1207651706.eu-central-1.elb.amazonaws.com:8989/bol/swagger-ui/#/game-rest-controller`- Documentation & Testing
+* 	[Swagger](http://bol-lb-1207651706.eu-central-1.elb.amazonaws.com:8989/bol/v2/api-docs) - `http://bol-lb-1207651706.eu-central-1.elb.amazonaws.com:8989/bol/v2/api-docs`- Documentation & Testing
+
 
 
 ## Continuous integration and Continuous delivery
@@ -239,10 +241,11 @@ For full APIs documentation please check [Documentation section](#documents)
 
 ## Documentation
 
+*	Find Java Docs in **docs** folder
 * 	[Postman Collection APIs](https://documenter.getpostman.com/view/13659214/UVC8DRzy) - `https://documenter.getpostman.com/view/13659214/UVC8DRzy`- Documentation & Testing
 * 	[Swagger](http://bol-lb-1207651706.eu-central-1.elb.amazonaws.com:8989/bol/swagger-ui/#/game-rest-controller) - `http://bol-lb-1207651706.eu-central-1.elb.amazonaws.com:8989/bol/swagger-ui/#/game-rest-controller`- Documentation & Testing 
 * 	[Swagger](http://bol-lb-1207651706.eu-central-1.elb.amazonaws.com:8989/bol/v2/api-docs) - `http://bol-lb-1207651706.eu-central-1.elb.amazonaws.com:8989/bol/v2/api-docs`- Documentation & Testing
-*	Find Java Docs in **docs** folder
+
 
 
 
