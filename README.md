@@ -1,5 +1,5 @@
 
-# Mancala Game [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/amrkramzy/store-locator/Continuous%20Integration?label=Continuous%20Integration&logo=sonarqube)](https://github.com/amrkramzy/store-locator/actions/workflows/main.yml) [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/amrkramzy/store-locator/Deploy%20to%20Amazon%20ECS?label=Deploy%20to%20Amazon%20ECS&logo=amazon)](https://github.com/amrkramzy/store-locator/actions/workflows/aws.yml) [![Sonar Tests](https://img.shields.io/sonar/tests/amrkramzy_store-locator?compact_message&server=https%3A%2F%2Fsonarcloud.io)](https://sonarcloud.io/dashboard?id=amrkramzy_store-locator) [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/amrkramzy/store-locator?logo=docker)](https://hub.docker.com/r/amrkramzy/store-locator) [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/amrkramzy/store-locator?logo=docker)](https://hub.docker.com/r/amrkramzy/store-locator)
+# Mancala Game [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/amrkramzy/bol-mancala/Continuous%20Integration?label=Continuous%20Integration&logo=sonarqube)](https://github.com/amrkramzy/bol-mancala/actions/workflows/main.yml) [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/amrkramzy/bol-mancala/Deploy%20to%20Amazon%20ECS?label=Deploy%20to%20Amazon%20ECS&logo=amazon)](https://github.com/amrkramzy/bol-mancala/actions/workflows/aws.yml) [![Sonar Tests](https://img.shields.io/sonar/tests/amrkramzy_bol-mancala?compact_message&server=https%3A%2F%2Fsonarcloud.io)](https://sonarcloud.io/dashboard?id=amrkramzy_bol-mancala) [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/amrkramzy/bol-mancala?logo=docker)](https://hub.docker.com/r/amrkramzy/bol-mancala) [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/amrkramzy/bol-mancala?logo=docker)](https://hub.docker.com/r/amrkramzy/bol-mancala)
 
 [![screenshots1](images/mancala-ui.png)](images/mancala-ui.png)
 ### Board Setup
@@ -32,27 +32,30 @@ Google Search for Mancala or Kalaha game.
 
 </br>
 
-### The application is deployed on **AWS ECS** and a Demo Angular application can be used to demo the APIs on the **following link** [http://jumbo-alb-2004901793.eu-central-1.elb.amazonaws.com](http://jumbo-alb-2004901793.eu-central-1.elb.amazonaws.com)
+### The application is deployed on **AWS ECS** and a Demo Angular application can be used to demo the APIs on the **following link** [http://bol-lb-1207651706.eu-central-1.elb.amazonaws.com](http://bol-lb-1207651706.eu-central-1.elb.amazonaws.com)
 
 
 <p >
-	<a href="https://github.com/AmrRamzy/mancala-ui"><strong>FrontEnd application repository »</strong></a>
+	<a href="https://github.com/amrkramzy/mancala-ui"><strong>FrontEnd application repository »</strong></a>
 	<br />
    <a href="https://hub.docker.com/r/amrkramzy/bol-mancala-ui-demo"><strong>FrontEnd application Docker image »</strong></a>
 </p>
 
 ## Application screenshots
 
-### choose a location by one of the following methods:
-- Enter address in search bar
-- choose a location on the map 
-- Enter latitude/longitude in the input field
+### choose one of the following methods:
+- Create a new Game by entering 2 player names.
+- Load an existing Game by entering Game ID.
 
-[![screenshots1](images/store-locator-ui-demo-aws-1.png)](images/store-locator-ui-demo-aws-1.png)
-[![screenshots2](images/store-locator-ui-demo-aws-2.png)](images/store-locator-ui-demo-aws-2.png)
-[![screenshots3](images/store-locator-ui-demo-aws-3.png)](images/store-locator-ui-demo-aws-3.png)
-### Error flow
-[![Error screenshots](images/store-locator-ui-demo-aws-validation-error.png)](images/store-locator-ui-demo-aws-validation-error.png)
+### New Game
+[![screenshots1](images/bol-mancala-ui-demo-1.png)](images/bol-mancala-ui-demo-1.png)
+[![screenshots2](images/bol-mancala-ui-demo-2.png)](images/bol-mancala-ui-demo-2.png)
+[![screenshots3](images/bol-mancala-ui-demo-3.png)](images/bol-mancala-ui-demo-3.png)
+[![screenshots3](images/bol-mancala-ui-demo-4.png)](images/bol-mancala-ui-demo-4.png)
+### Load Game
+[![screenshots3](images/bol-mancala-ui-demo-5.png)](images/bol-mancala-ui-demo-5.png)
+### Game Over
+[![screenshots3](images/bol-mancala-ui-demo-6.png)](images/bol-mancala-ui-demo-6.png)
 <br />
 
 
@@ -79,6 +82,7 @@ Google Search for Mancala or Kalaha game.
 |<a href="https://spring.io/projects/spring-data-mongodb">Spring Data Mongodb</a>|The Spring Data MongoDB project provides integration with the MongoDB document database.                        |
 |<a href="https://www.mongodb.com/cloud/atlas">MongoDB Atlas</a>                                                      |MongoDB Atlas is a fully-managed cloud database developed by the same people that build MongoDB.           |
 |<a href="https://www.docker.com/">Docker</a>                        |Docker is an open source containerization platform. It enables developers to package applications into containers. |                                                                                            
+|<a href="https://aws.amazon.com/">AWS</a>                        |AWS (Amazon Web Services) is a comprehensive, evolving cloud computing platform provided by Amazon that includes a mixture of infrastructure as a service (IaaS), platform as a service (PaaS) and packaged software as a service (SaaS) offerings. |                                                                                            
 
 ###  Libraries and Plugins
 
@@ -116,14 +120,14 @@ The application has 3 profiles to work with
 Build the application using  [Apache Maven](https://maven.apache.org/) like so:
 
 ```shell
-git clone https://github.com/AmrRamzy/mancala.git
+git clone https://github.com/amrkramzy/mancala.git
 cd mancala
 mvn clean package -Pprod
 ```
 
 ## Deployment
 
-### Important Note:	Front-end Angular application [mancala-ui](https://github.com/AmrRamzy/mancala-ui) can be used for demonstration purpose .
+### Important Note:	Front-end Angular application [mancala-ui](https://github.com/amrkramzy/mancala-ui) can be used for demonstration purpose .
 
 
 <br>
@@ -164,7 +168,7 @@ mvn clean package -Pprod
 The code can be built into a jar and then executed/run by using the below commands
 
 ```shell
-git clone https://github.com/AmrRamzy/mancala.git
+git clone https://github.com/amrkramzy/mancala.git
 cd mancala
 mvn clean package -Pprod 
 export DB_JASYPT_ENCRYPTOR_PASSWORD=DB-secret
@@ -176,7 +180,7 @@ java -jar ./target/mancala-0.0.1-SNAPSHOT.jar
 The code can be built into a jar and then executed/run by using the below commands
 
 ```shell
-git clone https://github.com/AmrRamzy/mancala.git
+git clone https://github.com/amrkramzy/mancala.git
 cd mancala
 mvn clean package -Pprod
 set DB_JASYPT_ENCRYPTOR_PASSWORD=DB-secret
@@ -190,7 +194,7 @@ The code can be built into a jar and then executed/run on Docker container by us
 * 	build the jar and Docker image .
 
 ```shell
-git clone https://github.com/AmrRamzy/mancala.git
+git clone https://github.com/amrkramzy/mancala.git
 cd mancala
 mvn clean package -Pprod
 docker build -t bol-mancala .
@@ -222,7 +226,7 @@ For full APIs documentation please check [Documentation section](#documents)
 
 ## Continuous integration and Continuous delivery
 ### GitHub action is used here to create 2 workflows
-[![workflow](images/github-workflows.png)](images/github-workflows.png)
+
 #### Continuous Integration (will be triggered on push and pull requests)
 - Build the application and run both unit test and integration test using Maven  
 - Apply code analytics with SonarCloud
