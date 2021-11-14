@@ -1,7 +1,7 @@
 
 # Mancala Game [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/amrkramzy/mancala/Continuous%20Integration?label=Continuous%20Integration&logo=sonarqube)](https://github.com/amrkramzy/mancala/actions/workflows/main.yml) [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/amrkramzy/mancala/Deploy%20to%20Amazon%20ECS?label=Deploy%20to%20Amazon%20ECS&logo=amazon)](https://github.com/amrkramzy/mancala/actions/workflows/aws.yml) [![Sonar Tests](https://img.shields.io/sonar/tests/amrkramzy_mancala?compact_message&server=https%3A%2F%2Fsonarcloud.io)](https://sonarcloud.io/dashboard?id=amrkramzy_mancala) [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/amrkramzy/bol-mancala?logo=docker)](https://hub.docker.com/r/amrkramzy/bol-mancala) [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/amrkramzy/bol-mancala?logo=docker)](https://hub.docker.com/r/amrkramzy/bol-mancala)
 
-[![screenshots1](images/mancala-ui.png)](images/mancala-ui.png)
+[![screenshots1](images/mancala.jpg)](images/mancala.jpg)
 ### Board Setup
 Each of the two players has his six pits in front of him. To the right of the six pits, each player has a larger pit. At the start of the game, there are six stones in each of the six round pits .
 ### Rules
@@ -250,4 +250,4 @@ For full APIs documentation please check [Documentation section](#documents)
 
 Amr Ramzy - eng.amr.kamel@gmail.com
 
-Project Link: [https://github.com/AmrRamzy/mancala](https://github.com/AmrRamzy/mancala)
+Project Link: [https://github.com/amrkramzy/mancala](https://github.com/amrkramzy/mancala)
